@@ -23,6 +23,11 @@ app.set("layout", "./layouts/layout")
  *************************/
 app.use(static)
 
+//  index route
+app.get("/", function (req, res) {
+  res.render("index", { title: "Home" })
+})
+
 /* ***********************
  * Local Server Information
  * Values from .env (environment) file
@@ -38,7 +43,3 @@ app.listen(port, () => {
 })
 
 
-//  index route
-app.get("/", function (req, res) {
-  res.render("index", { title: "Home" })
-})
