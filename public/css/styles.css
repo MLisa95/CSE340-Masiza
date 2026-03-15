@@ -4,3 +4,12 @@
 *:after {
   box-sizing: border-box;
 }
+
+.main-body {
+  background-image: url(/public/images/site/checkerboard.jpg);
+  background-repeat: repeat;
+}
+
+header {
+  display: flex;
+}
