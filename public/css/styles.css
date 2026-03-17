@@ -5,11 +5,146 @@
   box-sizing: border-box;
 }
 
-.main-body {
-  background-image: url(/public/images/site/checkerboard.jpg);
+body {
+  background-image: url(/images/site/checkerboard.jpg);
   background-repeat: repeat;
+
+}
+
+#wrapper {
+  margin: 3rem 3rem;
+  /* padding: 1rem; */
+  border: solid 4px rgb(110, 93, 121);
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: white;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+  /* margin: 2rem; */
+  align-items: center;
+  justify-items: center;
+  /* background-color: yellow; */
+  /* margin-top: 2rem; */
+}
+
+nav {
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  flex-wrap: wrap;
+  gap: 3rem;
+  list-style: none;
+  height: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  height: calc();
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.car-details {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background-color: rgba(236, 236, 236, 0.473);
+  padding: 1rem;
+  border-radius: 6px;
+
+}
+
+.own-button {
+  background-color: rgb(83, 146, 241);
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.car-details p {
+  font-size: 1.5rem;
+  color: rgb(83, 146, 241);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.car-details h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(83, 146, 241);
+  font-size: 2rem;
+}
+
+.more-info {
+  display: flex;
+}
+
+.upgrades {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 250px 250px;
+  /* padding: 1rem; */
+}
+
+.image-box {
+  display: flex;
+  background-color: #6e6eff;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.image-box img {
+  /* align-self: center; */
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-image: none;
+  }
+
+  #wrapper {
+    border: none;
+  }
+
+  .more-info {
+    flex-direction: column;
+    flex-direction: reverse;
+  }
+
+  .car-details {
+    max-height: 240px;
+  }
+
+  .car-details p {
+    font-size: 1rem;
+  }
+
+  /* header {
+    width: 100%;
+  } */
+
+  nav ul {
+    font-size: smaller;
+  }
 }
